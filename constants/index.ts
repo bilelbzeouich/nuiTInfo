@@ -1,43 +1,39 @@
 export const categoryOptions = [
   {
-    value: "general_knowledge",
-    option: "General Knowledge",
+    value: "marine_ecosystems",
+    option: "Marine Ecosystems",
   },
   {
-    value: "arts_and_literature",
-    option: "Arts & Literature",
+    value: "oceanography",
+    option: "Oceanography",
   },
   {
-    value: "film_and_tv",
-    option: "Film & TV",
+    value: "marine_life",
+    option: "Marine Life",
   },
   {
-    value: "food_and_drink",
-    option: "Food & Drink",
+    value: "climate_and_oceans",
+    option: "Climate & Oceans",
   },
   {
-    value: "society_and_culture",
-    option: "Society & Culture",
+    value: "conservation",
+    option: "Conservation",
   },
   {
-    value: "geography",
-    option: "Geography",
+    value: "ocean_history",
+    option: "Ocean History",
   },
   {
-    value: "history",
-    option: "History",
+    value: "pollution_and_impact",
+    option: "Pollution & Impact",
   },
   {
-    value: "music",
-    option: "Music",
+    value: "sustainable_practices",
+    option: "Sustainable Practices",
   },
   {
-    value: "sport_and_leisure",
-    option: "Sport & Leisure",
-  },
-  {
-    value: "science",
-    option: "Science",
+    value: "ocean_trivia",
+    option: "Ocean Trivia",
   },
 ];
 
@@ -63,14 +59,13 @@ export const alphabeticNumeral = (index: number) => {
 };
 
 export const showCategory = (category: string) => {
-  if (category === "general_knowledge") return "General Knowledge";
-  else if (category === "science") return "Science";
-  else if (category === "sport_and_leisure") return "Sports & Leisure";
-  else if (category === "music") return "Music";
-  else if (category === "history") return "History";
-  else if (category === "geography") return "Geography";
-  else if (category === "society_and_culture") return "Society & Culture";
-  else if (category === "arts_and_literature") return "Arts & Literture";
-  else if (category === "film_and_tv") return "Film & TV";
-  else if (category === "food_and_drink") return "Food & Drink";
+  if (category === "marine_ecosystems") return "Marine Ecosystems";
+  else if (category === "oceanography") return "Oceanography";
+  else if (category === "marine_life") return "Marine Life";
+  else if (category === "climate_and_oceans") return "Climate & Oceans";
+  else if (category === "conservation") return "Conservation";
+  else if (category === "ocean_history") return "Ocean History";
+  else if (category === "pollution_and_impact") return "Pollution & Impact";
+  else if (category === "sustainable_practices") return "Sustainable Practices";
+  else if (category === "ocean_trivia") return "Ocean Trivia";
 };

@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import ModalProvider from "@/components/modals/modal-provider";
 import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
+import Navbar from "@/components/global/NavBar/Nav";
+import Footer from "@/components/global/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +22,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ModalProvider />
-        <main>{children}</main>
+        <Navbar/>
+        {children}
+        <Footer/>
         <Toaster position="top-center" duration={5000} richColors />
       </body>
     </html>

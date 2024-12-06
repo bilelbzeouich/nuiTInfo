@@ -25,7 +25,7 @@ const QuizSettings = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center gap-4 md:gap-6">
+    <div className="flex flex-col justify-center items-center gap-4 md:gap-6 ">
       <Select value={category} onValueChange={(value) => setCategory(value)}>
         <SelectTrigger className="w-full md:max-w-xs xl:max-w-md">
           <SelectValue placeholder="Category" />
